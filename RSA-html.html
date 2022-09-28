@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="priyajs.js" lang="javascript"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>rsa</legend>
+        <h5>text with RED color are required to fill and NON-RED color text field will give answer.</h5>
+        <p style="color: red; text-shadow: black;">message=<input type="text" id="msg" required/></p>
+        
+    
+       <p style="color: red; text-shadow: black;"> p=<input type="number" id="p"  required/></p>
+      
+       <p style="color: red; text-shadow: black;">q=<input type="number" id="q" required/></p> 
+    
+        <p style="color: red; text-shadow: black;">s=<input type="number" id="s" required/></p>
+   
+        <input type="button"  onclick="multi()"  value="get answer"/>
+
+        <input type="button" onclick="reset()" value="reset values" />
+   
+        <hr>
+        n=<input type="text" id="pq" readonly />
+        Φ(n)=<input type="text" id="n" readonly />
+     
+
+        <hr>
+        <b> conditons for public key</b>
+        <br>
+
+        1 < s < Φ(n)
+        
+        <input type="text"  id="s1"  readonly />
+        <br>
+        <br>
+        <hr>
+        gcd(s,Φ(n))
+        <input type="text" id="gcd" readonly />
+        <br>
+        <i>if the GCD is not <b>1</b> then proceed ahead.</i>
+        <br>
+        <hr>
+        This the code of the message you typed in:
+        <br>
+        <br>
+        code: <br>
+        <textarea id="dic1" readonly></textarea>
+        <hr>
+        <div id="value">
+            encrypted code:<br>
+            <textarea id="answer" readonly></textarea>
+            <br>
+            <br>
+            encrypted msg:<br>
+            <textarea id="answerinword" readonly></textarea>
+            <br>
+
+            <br>
+            if number greater than 25 then refer below img:
+            <br>
+            <img src="InkedAlphabet_and_It's_number_LI.jpg"></img>
+        </div>
+
+    </fieldset>
+</body>
+</html>
